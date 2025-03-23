@@ -1,9 +1,6 @@
 # Unit-Tests
 
-1. Définition des tests unitaires
-
-- FIRST (Fast, Isolated, Repeatable, Self-validating, Timely)
-- Différence avec tests d'intégration et test fonctionnels
+1. Définition des tests unitaires ✅
 
 2. Développement logiciel
 
