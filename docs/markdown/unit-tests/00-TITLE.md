@@ -1,12 +1,7 @@
 # Unit-Tests
 
 1. Définition des tests unitaires ✅
-
-2. Développement logiciel
-
-- Cycle de vie logiciel
-- Pyramide de tests
-- Coûts des bugs selon le stade de détection
+2. Développement logiciel ✅
 
 3. Dotnet
 
@@ -44,12 +39,22 @@
 - Mettre une interface devant les dépendances externes + tester
 - Tester la couche d'accès aux données (Entity Framework Core - InMemory)
 
-9. Autres types de tests
+9. Philosopie de tests
+- Confiance
+- Regression
+- Architectue
+- Vitesse / Temps / Coûts (professionnel)
+- Collaboration
+- Documentation vivante
+- Couverture de code
+- A quel point tester?
+
+10. Autres types de tests
 
 - Snapshot testing
 - Mutation testing
 
-10. Continuous Testing
+11. Continuous Testing
 
 - Live Testing
 - Running tests in docker
