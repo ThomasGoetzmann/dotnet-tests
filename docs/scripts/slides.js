@@ -5,7 +5,13 @@ function introSlides() {
 }
 
 function unitTests() {
-  return ['unit-tests/00-TITLE.md'];
+  return ['unit-tests/00-TITLE.md',
+    'unit-tests/01-definitions.md',
+    'unit-tests/02-autres-tests.md',
+    'unit-tests/03-cycle-vie-logiciel.md',
+    'unit-tests/04-frameworks.md',
+  ];
+
 }
 
 function formation() {

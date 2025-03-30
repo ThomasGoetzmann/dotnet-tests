@@ -2,11 +2,9 @@
 
 1. Définition des tests unitaires ✅
 2. Développement logiciel ✅
+3. Frameworks de tests ✅
 
-3. Dotnet
-
-- Choisir son framework (MSTest, NUnit, xUnit)
-- Outils d'analyse de converture de code (dotnet-coverage)
+- Tableau comparatif
 
 4. Mise en place
 
@@ -53,6 +51,7 @@
 
 - Snapshot testing
 - Mutation testing
+- Outils d'analyse de converture de code (dotnet-coverage)
 
 11. Continuous Testing
 
