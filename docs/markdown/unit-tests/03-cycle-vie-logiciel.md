@@ -8,8 +8,9 @@
 6. Mise en production
 7. Maintenance
 
-A quels endroits parle t-on de tests ?
-A quels endroits faie les tests unitaires ?
+Questions
+- A quels endroits parle t-on de tests ?
+- A quels endroits faie les tests unitaires ?
 
 ##==##
 

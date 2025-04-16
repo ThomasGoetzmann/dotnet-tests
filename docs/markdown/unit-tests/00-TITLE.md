@@ -3,9 +3,6 @@
 1. Définition des tests unitaires ✅
 2. Développement logiciel ✅
 3. Frameworks de tests ✅
-
-- Tableau comparatif
-
 4. Mise en place
 
 - NuGet packages nécessaires
@@ -38,6 +35,7 @@
 - Tester la couche d'accès aux données (Entity Framework Core - InMemory)
 
 9. Philosopie de tests
+
 - Confiance
 - Regression
 - Architectue

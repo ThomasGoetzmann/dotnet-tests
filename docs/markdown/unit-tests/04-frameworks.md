@@ -1,7 +1,7 @@
 # Frameworks de tests
 
-- MSTest
 - NUnit
+- MSTest
 - xUnit
 - TUnit
 
@@ -20,16 +20,16 @@
 Avis et retours personnels sur chacun des frameworks.
 
 ---
-MSTest, directement proposé par Microsoft. Les premières versions étaient très limitées et peu performantes.
-Aujourd'hui correct, il reste moins utilisé. Malgré une très bonne intégration aux outils Microsoft, il 'lag' souvent derrière les autres frameworks en terme de fonctionnalités.
-
-Choix: Correct mais pas le meilleur. Le point fort est principalement l'intégration avec certains outils MS.
-
----
 NUnit, ancien, directement inspiré du framework de Java.
 La configuration par default peut rapidement amener à des résultats innatendus et il demande plus de connaissances et de rigueur pour avoir une suite de tests propre et efficace.
 
 Choix : Déconséillé.
+
+---
+MSTest, directement proposé par Microsoft. Les premières versions étaient très limitées et peu performantes.
+Aujourd'hui correct, il reste moins utilisé. Malgré une très bonne intégration aux outils Microsoft, il 'lag' souvent derrière les autres frameworks en terme de fonctionnalités.
+
+Choix: Correct mais pas le meilleur. Le point fort est principalement l'intégration avec certains outils MS.
 
 ---
 XUnit, est le plus utilisé et le plus simple pour les tests unitaires.
@@ -44,3 +44,104 @@ Deux inconvénients: sa jeunesse, et le fait qu'il ne fonctionne qu'avec "Micros
 Choix: probablement le meilleur, mais sa jeunesse le rend plus "risqué" sur le long terme.
 
 -->
+
+##==##
+
+<table style="font-size: 0.8em;">
+  <thead>
+    <tr>
+      <th>Fonctionnalité</th>
+      <th>NUnit</th>
+      <th>MSTest</th>
+      <th>xUnit</th>
+      <th>TUnit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Classe de test</b></td>
+      <td><code>[TestFixture]</code></td>
+      <td><code>[TestClass]</code></td>
+      <td>Non requis</td>
+      <td><code>[TestClass]</code></td>
+    </tr>
+    <tr>
+      <td><b>Méthode de test</b></td>
+      <td><code>[Test]</code></td>
+      <td><code>[TestMethod]</code></td>
+      <td><code>[Fact]</code></td>
+      <td><code>[Test]</code></td>
+    </tr>
+    <tr>
+      <td><b>Tests paramétrés</b></td>
+      <td><code>[TestCase(...)]</code></td>
+      <td><code>[DataRow(...)]</code></td>
+      <td><code>[Theory][InlineData(...)]</code></td>
+      <td><code>[TestCase(...)]</code></td>
+    </tr>
+    <tr>
+      <td><b>Init. classe</b></td>
+      <td><code>[OneTimeSetUp]</code></td>
+      <td><code>[ClassInitialize]</code></td>
+      <td>Constructor</td>
+      <td><code>[Before(Class)]</code></td>
+    </tr>
+    <tr>
+      <td><b>Cleanup classe</b></td>
+      <td><code>[OneTimeTearDown]</code></td>
+      <td><code>[ClassCleanup]</code></td>
+      <td><code>IDisposable.Dispose()</code></td>
+      <td><code>[After(Class)]</code></td>
+    </tr>
+    <tr>
+      <td><b>Init. test</b></td>
+      <td><code>[SetUp]</code></td>
+      <td><code>[TestInitialize]</code></td>
+      <td>Constructor</td>
+      <td><code>[Before(Test)]</code></td>
+    </tr>
+    <tr>
+      <td><b>Cleanup test</b></td>
+      <td><code>[TearDown]</code></td>
+      <td><code>[TestCleanup]</code></td>
+      <td><code>IDisposable.Dispose()</code></td>
+      <td><code>[After(Test)]</code></td>
+    </tr>
+    <tr>
+      <td><b>Ignorer test</b></td>
+      <td><code>[Ignore("...")]</code></td>
+      <td><code>[Ignore]</code></td>
+      <td><code>[Fact(Skip="...")]</code></td>
+      <td><code>[Skip("...")]</code></td>
+    </tr>
+    <tr>
+      <td><b>Égalité</b></td>
+      <td><code>Assert.That(a, Is.EqualTo(e))</code></td>
+      <td><code>Assert.AreEqual(e, a)</code></td>
+      <td><code>Assert.Equal(e, a)</code></td>
+      <td><code>Assert.That(a).IsEqualTo(e)</code></td>
+    </tr>
+    <tr>
+      <td><b>Vérité</b></td>
+      <td><code>Assert.That(c, Is.True)</code></td>
+      <td><code>Assert.IsTrue(c)</code></td>
+      <td><code>Assert.True(c)</code></td>
+      <td><code>Assert.That(c).IsTrue()</code></td>
+    </tr>
+    <tr>
+      <td><b>Exception</b></td>
+      <td><code>Assert.Throws&lt;E&gt;(() => {})</code></td>
+      <td><code>[ExpectedException(typeof(E))]</code></td>
+      <td><code>Assert.Throws&lt;E&gt;(() => {})</code></td>
+      <td><code>Assert.That(() => {}).ThrowsException()</code></td>
+    </tr>
+    <tr>
+      <td><b>Catégories</b></td>
+      <td><code>[Category("cat")]</code></td>
+      <td><code>[TestCategory("cat")]</code></td>
+      <td><code>[Trait("Category", "cat")]</code></td>
+      <td><code>[Category("cat")]</code></td>
+    </tr>
+  </tbody>
+</table>
+
