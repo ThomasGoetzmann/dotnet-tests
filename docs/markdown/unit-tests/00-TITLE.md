@@ -11,19 +11,22 @@
 - Theory et InlineData
 - MemberData et ClassData
 
-7. Tests avancés
-
+7.
 - Type de Unit-tests: Return / State / Interaction
+
+8. Tests avancés
+
 - Importance des interfaces, du couplage faible et de l'injection de dépendances
 - Fakes (Stubs et Mocks)
 - Framework de Moq (NSubstitute, FakeItEasy, Moq)
 
-8. Architecture
+9. Architecture
 
 - Mettre une interface devant les dépendances externes + tester
 - Tester la couche d'accès aux données (Entity Framework Core - InMemory)
+- Tester les dates
 
-9. Philosopie de tests
+10.  Philosopie de tests
 
 - Confiance
 - Regression
@@ -34,13 +37,13 @@
 - Couverture de code
 - A quel point tester?
 
-10. Autres types de tests
+11. Autres types de tests
 
 - Snapshot testing
 - Mutation testing
 - Outils d'analyse de converture de code (dotnet-coverage)
 
-11. Continuous Testing
+12. Continuous Testing
 
 - Live Testing
 - Running tests in docker
