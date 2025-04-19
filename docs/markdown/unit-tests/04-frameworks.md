@@ -144,4 +144,3 @@ Choix: probablement le meilleur, mais sa jeunesse le rend plus "risqué" sur le 
     </tr>
   </tbody>
 </table>
-

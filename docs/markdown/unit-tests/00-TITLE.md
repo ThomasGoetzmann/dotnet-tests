@@ -3,22 +3,11 @@
 1. Définition des tests unitaires ✅
 2. Développement logiciel ✅
 3. Frameworks de tests ✅
-4. Mise en place
-
-- NuGet packages nécessaires
+4. Mise en place ✅
   TODO (différence entre Test Plateform)e
-- Structure d'un projet de test et mots clés de base
-- Premier unit test
-- Lancer les tests (cli, visual studio, new dotnet test plateform run)
-
-5. Organisation
-
-- Convention de nommage
-- Traits & Category
-- Par classe
+5. Organisation ✅
 
 6. Tests paramétrés
-
 - Theory et InlineData
 - MemberData et ClassData
 
