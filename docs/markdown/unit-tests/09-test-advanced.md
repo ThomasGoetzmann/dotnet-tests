@@ -62,3 +62,59 @@ public class Car
 => On peut facilement choisir un moteur essence ou un moteur électrique selon les besoins.
 ✔  On peut changer de moteur. 
 => On peut facilement préparer un moteur pour ensuite l'utiliser (un plus ancien qui ne fonctionne plus, ou un plus récent qui est plus performant)
+
+##==##
+
+# Utilisation de fake
+
+
+```csharp
+public class Car 
+{
+    private IEngine _engine;
+
+    public Car (IEngine engine) { _engine = engine; }
+
+    //...
+}
+
+```
+
+On peut soit créer son propre "faux" moteur...
+
+```csharp
+public class FakeEngine : IEngine
+{
+    public bool StartEngineIsCalled { get; private set; } = false;
+    public void StartEngine() { StartEngineIsCalled = true; }
+}
+```
+
+... mais cela peut rapidement demander beaucoup de travail:
+- Il faut créer pleins de "faux" moteurs différents, configurés selon les besoins du test à réaliser.
+- Ces "faux" moteurs représentent beaucoup de code à nettoyer et maintenir
+
+##==##
+
+# NSubstitute, FakeItEasy
+
+On peut utiliser une bibliothèque existante qui simplifie la création de "Fakes".
+Généralement on parle aussi de "Mock" ou "Mocking frameworks"
+
+```csharp
+[Fact]
+public void Start_WithEngine_CallsStartEngine()
+{
+    // Arrange
+    var fakeEngine = Substitute.For<IEngine>();
+    var myCar = new Car(fakeEngine);
+    
+    // Act
+    myCar.Start();
+    
+    // Assert
+    fakeEngine.Received(1).StartEngine();
+}
+```
+
+Remarque: attention à `Moq` qui est une bibliothèque très répandue, mais qui a certaines fonctionnalitées qui mènent souvent à de mauvais tests unitaires.

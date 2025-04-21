@@ -7,12 +7,7 @@
 5. Organisation ✅
 6. Tests paramétrés ✅
 7. Types de tests : Return / State / Interaction ✅
-
-8. Tests avancés
-
-- Importance des interfaces, du couplage faible et de l'injection de dépendances
-- Fakes (Stubs et Mocks)
-- Framework de Moq (NSubstitute, FakeItEasy, Moq)
+8. Tests avancés ✅
 
 9. Architecture
 
