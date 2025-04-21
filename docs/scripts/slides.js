@@ -15,6 +15,10 @@ function unitTests() {
     'unit-tests/07-test-params.md',
     'unit-tests/08-test-types.md',
     'unit-tests/09-test-advanced.md',
+    'unit-tests/10-cas-particuliers.md',
+    'unit-tests/11-philosophie.md',
+    'unit-tests/12-continuous-testing.md',
+    'unit-tests/13-other-tests.md'
   ];
 
 }

@@ -9,31 +9,23 @@
 7. Types de tests : Return / State / Interaction ✅
 8. Tests avancés ✅
 
-9. Architecture
+9. Cas particuliers
 
 - Mettre une interface devant les dépendances externes + tester
 - Tester la couche d'accès aux données (Entity Framework Core - InMemory)
 - Tester les dates
 
-10. Philosopie de tests
+10. Philosopie des tests unitaires
 
-- Confiance
-- Regression
-- Architectue
-- Vitesse / Temps / Coûts (professionnel)
-- Collaboration
-- Documentation vivante
-- Couverture de code
-- A quel point tester?
+11. Continuous Testing
 
-11. Autres types de tests
+- Live Testing
+- Running tests in docker
+- Setup pipeline
+
+12. Autres types de tests
 
 - Snapshot testing
 - Mutation testing
 - Outils d'analyse de converture de code (dotnet-coverage)
 
-12. Continuous Testing
-
-- Live Testing
-- Running tests in docker
-- Setup pipeline
