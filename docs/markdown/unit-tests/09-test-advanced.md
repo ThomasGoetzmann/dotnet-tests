@@ -1,0 +1,64 @@
+# Tests avancés
+
+## L'importance des interfaces
+
+Lorsqu'une classe (celle que l'on veut tester) en utilise une autre, il est conseillé d'utiliser une interface et d'injecter cette dépendances (à l'aide du constructeur par exemple).
+
+Exemple d'une composition (UML):
+
+```csharp
+public class Car
+{
+    private readonly Diesel _diesel;
+    
+    public Car() { _diesel = new Diesel(); }
+
+    //...
+}
+```
+
+❌ On utilise directement un moteur Diesel.
+=> Impossible d'utiliser un moteur Essence ou un moteur de Test par exemple.
+❌ Un vrai moteur Diesel est forcément créé dès qu'on créé la voiture. On ne peut pas le changer.
+=> Impossible d'utiliser la voiture sans moteur (lorsqu'on veut vérifier l'alimentation de la batterie par exemple).
+
+##==##
+
+Exemple d'une aggrégation (UML)
+
+```csharp
+public class Cary
+{
+    private readonly Diesel _diesel;
+    
+    public Car(Diesel diesel) { _diesel = diesel; }
+    
+    //...
+}
+```
+
+❌ On utilise directement un moteur Diesel.
+=> Impossible d'utiliser un moteur Essence ou un moteur de Test par exemple.
+✔  On peut changer de moteur. 
+=> On peut facilement préparer un moteur pour ensuite l'utiliser (un plus ancien qui ne fonctionne plus, ou un plus récent qui est plus performant)
+
+##==##
+
+Exemple d'une association (UML)
+
+```csharp
+public class Car 
+{
+    private IEngine _engine;
+
+    public Car (IEngine engine) { _engine = engine; }
+
+    //...
+}
+
+```
+
+✔  On peut choisir le type de moteur. 
+=> On peut facilement choisir un moteur essence ou un moteur électrique selon les besoins.
+✔  On peut changer de moteur. 
+=> On peut facilement préparer un moteur pour ensuite l'utiliser (un plus ancien qui ne fonctionne plus, ou un plus récent qui est plus performant)
