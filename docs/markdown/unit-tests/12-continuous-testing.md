@@ -1,6 +1,10 @@
+<!-- .slide: class="transition-bg-sfeir-2" -->
+
 # Continuous Testing
 
-## Live Unit Testing dans Visual Studio Enterprise ou ReSharper
+##==##
+
+# Live Unit Testing dans Visual Studio Enterprise ou ReSharper
 
 Relancer les tests dès qu'on sauvegarde un fichier avec Live Unit Testing dans Visual Studio Enterprise.
 [Live Unit Testing overview](https://learn.microsoft.com/en-us/visualstudio/test/live-unit-testing-intro)
@@ -10,13 +14,14 @@ Resharper permet quand-à lui de configurer une ré-execution des tests automati
 
 ##==##
 
-## Lancer les tests dans un conteneur docker
+# Lancer les tests dans un conteneur docker
+
+<!-- .slide: class="with-code" -->
 
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 
-ENV SLN=MaSoluce.sln
-ENV CSPROJ=MonProjet.csproj
+ENV SLN=MaSoluce.sln ENV CSPROJ=MonProjet.csproj
 ENV CONFIGURATION=Release
 ENV SOURCE_DIR=src
 ENV TEST_DIR=tests
@@ -45,7 +50,7 @@ ENTRYPOINT ["dotnet", "MonProjet.dll"]
 
 ##==##
 
-## Automatisation dans des pipelines
+# Automatisation dans des pipelines
 
 1. Premier feedback lors de **l'execution en local**
 2. Deuxième feedback lors du **build** et de l'exécution des **tests unitaires** sur une **machine de build**

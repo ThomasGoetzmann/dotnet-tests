@@ -1,6 +1,10 @@
-# Cas particuliers
+<!-- .slide: class="transition-bg-sfeir-2" -->
 
-## Dépendances externes
+# Les cas particuliers
+
+##==##
+
+# Dépendances externes
 
 1. Ne pas utiliser les méthodes de la bibliothèque directement.
 2. Créer une interface avec les méthodes nécessaires.
@@ -8,9 +12,9 @@
 
 Cette méthode peut être utilisée avec des paquets NuGet et API externes.
 
-##--##
+##==##
 
-Exemple:
+<!-- .slide: class="with-code max-height" -->
 
 ```csharp
 using UnitsNet;
@@ -40,23 +44,26 @@ public class UnitsNetConverter : IUnitConverter
 
 ##==##
 
-## Entity Framework / Couche d'accès aux données
+# Entity Framework / Couche d'accès aux données
 
 1. Eviter de tester la base de données directement.
 2. Utiliser le package NuGet `Microsoft.EntityFrameworkCore.InMemory`. Mais attentions aux limitations.
 3. Mettre en place un environnement de test pour réaliser des tests d'intégration.
 
-## Les fichiers: IO
+##==##
+
+# Les fichiers: IO
 
 Utiliser le packet NuGet [`System.IO.Abstractions`](https://github.com/TestableIO/System.IO.Abstractions)
 Cette bibliothèque fournie directement des interfaces `IFileSystem` à utiliser à la place des méthodes statiques (par exemple `File.ReadAllTest`)
 
 ##==##
 
-## Les dates
+<!-- .slide: class="two-column with-code" -->
 
-Il existe des bibliothèques, mais vu la simplicité, il est recommandé d'avoir une propre implémentation d'une interface
-`IDateTimeProvider` tel que recommandé dans les bonnes pratiques officielles de Microsoft.
+# Les dates
+
+Il existe des bibliothèques, mais il est recommandé d'avoir une propre implémentation d'une interface **`IDateTimeProvider`**
 
 ```csharp
 public interface IDateTimeProvider
@@ -68,6 +75,9 @@ public interface IDateTimeProvider
     DayOfWeek DayOfWeek();
 }
 ```
+
+##--##
+<br><br><br><br><br><br>
 
 ```csharp
 public class ExpirationService

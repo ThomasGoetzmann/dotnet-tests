@@ -1,7 +1,11 @@
-# Philosophie des tests unitaires 
+<!-- .slide: class="transition-bg-sfeir-2" -->
 
-Concernant les Test-Unitaires.
-Discutons de :
+# Philosophie
+
+##==##
+
+# Discutons de :
+
 - Confiance
 - Regression
 - Architecture
@@ -10,4 +14,4 @@ Discutons de :
 - Documentation vivante
 - Couverture de code
 - A quel point tester?
-
+<!-- .element: class="list-fragment" -->
