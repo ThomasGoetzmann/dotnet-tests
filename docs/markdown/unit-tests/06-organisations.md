@@ -12,15 +12,15 @@ Structure d'un projet de test:
 
 Exemples:
 
-User
-- `GetUserById_ValidId_ReturnsUser`
-- `ChangeAddress_ValidAddress_ChangedAddress`
-
-TransferMoney
-- `TransferMoney_ValidAccount_TransferedAmount`
-- `TransferMoney_InvalidAccount_ThrowsException`
-- `TransferMoney_InsufficientFunds_ThrowsException`
-- `TransferMoney_TargetAccountNotValid_ThrowsException`
+- User
+  <!-- .element: class="list-fragment" -->
+  - `GetUserById_ValidId_ReturnsUser`
+  - `ChangeAddress_ValidAddress_ChangedAddress`
+- TransferMoney
+  - `TransferMoney_ValidAccount_TransferedAmount`
+  - `TransferMoney_InvalidAccount_ThrowsException`
+  - `TransferMoney_InsufficientFunds_ThrowsException`
+  - `TransferMoney_TargetAccountNotValid_ThrowsException`
 
 ##==##
 
