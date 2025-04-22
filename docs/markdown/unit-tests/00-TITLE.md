@@ -8,15 +8,8 @@
 6. Tests paramétrés ✅
 7. Types de tests : Return / State / Interaction ✅
 8. Tests avancés ✅
-
-9. Cas particuliers
-
-- Mettre une interface devant les dépendances externes + tester
-- Tester la couche d'accès aux données (Entity Framework Core - InMemory)
-- Tester les dates
-
-10. Philosopie des tests unitaires
-
+9. Cas particuliers ✅
+10. Philosopie des tests unitaires ✅
 11. Continuous Testing
 
 - Live Testing
@@ -28,4 +21,3 @@
 - Snapshot testing
 - Mutation testing
 - Outils d'analyse de converture de code (dotnet-coverage)
-
