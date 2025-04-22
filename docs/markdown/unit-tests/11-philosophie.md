@@ -1,3 +1,9 @@
+<!-- .slide: class="transition-bg-sfeir-3" -->
+
+# Mise en oeuvre des connaissaces acquises
+
+##==##
+
 <!-- .slide: class="transition-bg-sfeir-2" -->
 
 # Philosophie
