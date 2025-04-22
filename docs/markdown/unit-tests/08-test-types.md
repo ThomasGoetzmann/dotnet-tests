@@ -1,9 +1,15 @@
-# Types de tests
+<!-- .slide: class="transition-bg-sfeir-2" -->
 
-## Return
+# Quels sont les différents types de tests unitaires ?
+
+##==##
+
+<!-- .slide: class="with-code " -->
+
+# Return
 
 ```csharp
-public class Car 
+public class Car
 {
     public string Start() { return "Vroum!"; }
 }
@@ -11,7 +17,7 @@ public class Car
 public class CarUnitTests
 {
     [Fact]
-    public void ValueBased_Test() 
+    public void ValueBased_Test()
     {
         //Arrange
         var myCar = new Car();
@@ -27,27 +33,29 @@ public class CarUnitTests
 
 ##==##
 
-## State
+<!-- .slide: class="with-code " -->
+
+# State
 
 ```csharp
-public class Car 
+public class Car
 {
     public bool IsRunning { get; private set; }
-    
+
     public void Start() { IsRunning = true; }
 }
 
 public class CarUnitTests
 {
     [Fact]
-    public void StateBased_Test() 
+    public void StateBased_Test()
     {
         //Arrange
         var myCar = new Car();
-    
+
         //Act
         myCar.Start();
-    
+
         //Assert
         Assert.True(myCar.IsRunning);
     }
@@ -56,7 +64,9 @@ public class CarUnitTests
 
 ##==##
 
-## Interaction
+<!-- .slide: class="with-code " -->
+
+# Interaction
 
 ```csharp
 public interface IEngine
@@ -64,7 +74,7 @@ public interface IEngine
     void StartEngine();
 }
 
-public class Car 
+public class Car
 {
     private IEngine _engine;
 
@@ -84,15 +94,15 @@ public class CarUnitTests
     }
 
     [Fact]
-    public void InteractionBased_Test() 
+    public void InteractionBased_Test()
     {
         //Arrange
         var fakeEngine = new FakeEngine();
         var myCar = new Car(fakeEngine);
-    
+
         //Act
         myCar.Start();
-    
+
         //Assert
         Assert.True(fakeEngine.StartEngineIsCalled);
     }
@@ -101,38 +111,41 @@ public class CarUnitTests
 
 ##==##
 
-# Triple A
+# Types de tests unitaires
 
-Arrange / Act / Assert
-
-## Assert
-
-- Ce que l'ont veut tester, vérifier
-- **1 seul assert** par test unitaire
-- des valeurs **simples**
-- des valeurs **fixes**
-
-## Act
-
-- La méthode invoquée
-
-## Arrange
-
-- Préparation du système:
-  - des valeurs d'input **simples**
-  - initialisation de la classe à tester
-  - substitution (=fake) des dépendances
-
-- Mettre le système dans l'état voulu:
-  - Appel d'une méthode d'initialisation par exemple
+![Unit test types](../../assets/images/unittest-types.png)
 
 ##==##
 
-# Exemple du triple A
+<!-- .slide: class="two-column" -->
+
+# Triple A
+
+- **Assert**
+  <!-- .element: class="list-fragment" -->
+  - Ce que l'ont veut tester, vérifier
+  - 1 seul assert par test unitaire
+  - des valeurs simples
+  - des valeurs fixes
+- **Act**
+  - La méthode invoquée
+- **Arrange**
+  - Préparation du système:
+    - des valeurs d'input simples
+    - initialisation de la classe à tester
+    - substitution (=fake) des dépendances
+  - Mettre le système dans l'état voulu:
+    - Appel d'une méthode d'initialisation par exemple
+
+##--##
+
+<!-- .slide: data-background="#2c3c4e"-->
+
+# Arrange / Act / Assert
 
 ```csharp
 [Fact]
-public void ValueBased_Test() 
+public void ValueBased_Test()
 {
     //Arrange
     var myCar = new Car();
@@ -144,4 +157,3 @@ public void ValueBased_Test()
     Assert.Equal("Vroum!", result);
 }
 ```
-

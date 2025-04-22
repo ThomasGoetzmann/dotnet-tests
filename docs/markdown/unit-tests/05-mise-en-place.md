@@ -1,3 +1,11 @@
+<!-- .slide: class="transition-bg-sfeir-2" -->
+
+# Premiers pas
+
+##==##
+
+<!-- .slide: class="with-code " -->
+
 # Mise en place - Configuration du .csproj
 
 La configuration d'un projet utilisant la nouvelle `Microsoft.Testing.Platform`
@@ -59,3 +67,9 @@ Exercice: lancer ce test de 4 manières différentes:
 - `dotnet run` dans une console
 - `dotnet test` dans une console
 <!-- .element: class="list-fragment" -->
+
+##==##
+
+<!-- .slide: class="transition-bg-sfeir-3" -->
+
+# Mise en pratique

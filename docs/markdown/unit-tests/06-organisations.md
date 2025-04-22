@@ -1,16 +1,32 @@
+<!-- .slide: class="transition-bg-sfeir-2" -->
+
+# Organisation
+
+##==##
+
 # Organisation des projets de tests
 
 Structure d'un projet de test:
-1. Séparer les tests unitaires des tests d'intégration et fonctionnels (par un projet différent/un dossier différent ou au minimum un attribut Category)
-2. Garder une structure similaire à celle de l'application
+
+1. **Séparer les tests unitaires** des tests d'intégration et fonctionnels
+
+![Organisation de la solution .NET](../../assets/images/orga-solution.png)
+
+2. Garder une **structure similaire** à celle de l'application
 
 ##==##
 
 # Convention de nommage
 
-`Method_Scenario_ExpectedBehavior`
+## Classes
 
-Exemples:
+**`ClassUnitTests`** ou **`ClassIntegrationTests`**
+
+<br>
+
+## Tests (méthodes)
+
+**`Method_Scenario_ExpectedBehavior`**
 
 - User
   <!-- .element: class="list-fragment" -->
@@ -24,6 +40,8 @@ Exemples:
 
 ##==##
 
+<!-- .slide: class="with-code " -->
+
 # Category (ou Traits)
 
 ```csharp
@@ -33,15 +51,17 @@ Exemples:
 [Trait("Feature", "#1911")]
 public void Test1()
 {
-    Assert.True(true);
+  Assert.True(true);
 }
+```
 
+```csharp
 // TUnit
 [Test]
 [Category("Integration")]
 public async Task IsTrue()
 {
-    await Assert.That(x).IsTrue();
+  await Assert.That(x).IsTrue();
 }
 ```
 

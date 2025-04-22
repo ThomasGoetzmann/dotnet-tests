@@ -1,3 +1,9 @@
+<!-- .slide: class="transition-bg-sfeir-2" -->
+
+# La Théorie
+
+##==##
+
 # Définition
 
 "Du code automatisé qui appelle un traitement unitaire du système et vérifie une seule et unique hypothèse quant au fonctionemment de ce traitement unitaire".

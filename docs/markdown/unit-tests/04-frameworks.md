@@ -1,3 +1,9 @@
+<!-- .slide: class="transition-bg-sfeir-2" -->
+
+# Choix d'un framework
+
+##==##
+
 <!-- .slide: class="two-column" -->
 
 # Frameworks de tests
@@ -10,21 +16,31 @@
 
 ![new dotnet test project templates](../../assets/images/new_test_project.png)
 
-##--##
-
-- ![Logo NUnit](../../assets/images/nunit-logo.png)
-- ![Logo xUnit](../../assets/images/xunit-logo.png)
-- ![Logo TUnit](../../assets/images/tunit-logo.png)
-<!-- .element: class="list-fragment" -->
-
 ##==##
 
 # Elements de comparaison
 
 - Syntaxe : Mots clés utilisés pour les tests et pour les asserts
 - Isolation et parallélisation
-
 - Integrations aux outils MS / Extensions
+<!-- .element: class="list-fragment" -->
+
+##==##
+
+<!-- .slide: class="two-column" data-background="#2c3c4e"-->
+
+# Les frameworks
+
+- ![Logo NUnit](../../assets/images/nunit-logo.png)
+- ![Logo MsTest](../../assets/images/mstest-logo.png)
+    <!-- .element: class="list-fragment" -->
+
+  ##--##
+  <br><br><br>
+
+- ![Logo xUnit](../../assets/images/xunit-logo.png)
+- ![Logo TUnit](../../assets/images/tunit-logo.png)
+<!-- .element: class="list-fragment" -->
 
 <!--
 Avis et retours personnels sur chacun des frameworks.
@@ -57,7 +73,9 @@ Choix: probablement le meilleur, mais sa jeunesse le rend plus "risqué" sur le 
 
 ##==##
 
-<table style="font-size: 0.8em;">
+# Tableau comparatif de la syntaxe des framework de tests unitaires
+
+<table style="font-size: 0.6em;">
   <thead>
     <tr>
       <th>Fonctionnalité</th>
