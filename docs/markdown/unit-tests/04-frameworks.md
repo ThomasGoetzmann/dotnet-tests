@@ -1,11 +1,21 @@
+<!-- .slide: class="two-column" -->
+
 # Frameworks de tests
 
 - NUnit
 - MSTest
 - xUnit
 - TUnit
+<!-- .element: class="list-fragment" -->
 
 ![new dotnet test project templates](../../assets/images/new_test_project.png)
+
+##--##
+
+- ![Logo NUnit](../../assets/images/nunit-logo.png)
+- ![Logo xUnit](../../assets/images/xunit-logo.png)
+- ![Logo TUnit](../../assets/images/tunit-logo.png)
+<!-- .element: class="list-fragment" -->
 
 ##==##
 

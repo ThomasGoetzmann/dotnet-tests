@@ -7,10 +7,13 @@
 5. Tests
 6. Mise en production
 7. Maintenance
+<!-- .element: class="list-fragment" -->
 
 Questions
+
 - A quels endroits parle t-on de tests ?
 - A quels endroits faie les tests unitaires ?
+<!-- .element: class="list-fragment" -->
 
 ##==##
 
@@ -27,5 +30,5 @@ Regardons à travers le prisme de la:
 - Précision des résultats
 <!-- un test unitaire, s'il est bien nommé, peut indiquer le problème sans même avoir à lire le code -->
 - Complexité du changement
-
-**Temps et argent ?**
+- **Temps et argent ?**
+<!-- .element: class="list-fragment" -->

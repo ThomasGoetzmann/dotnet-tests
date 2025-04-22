@@ -12,7 +12,7 @@ La configuration d'un projet utilisant la nouvelle `Microsoft.Testing.Platform`
 
     <!-- 2. TODO: Meilleur affichage console lorsqu'on fait un `dotnet run`-->
     <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
-    
+
     <!-- 3. TODO: Permet l'utilisation de la commande `dotnet test`-->
     <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
   </PropertyGroup>
@@ -28,7 +28,7 @@ La configuration d'un projet utilisant la nouvelle `Microsoft.Testing.Platform`
 </Project>
 ```
 
-Remark: il est possible que la version de Visual Studio utilisée nécessite une mise à jour (ou l'activation dans les options) pour utiliser correctement la `Microsoft.Testing.Platform`
+Remarque: il est possible que la version de Visual Studio utilisée nécessite une mise à jour (ou l'activation dans les options) pour utiliser correctement la `Microsoft.Testing.Platform`
 
 ##==##
 
@@ -53,6 +53,7 @@ public async Task IsTrue()
 ```
 
 Exercice: lancer ce test de 4 manières différentes:
+
 - "Flèche" run dans Visual Studio
 - Test Explorer dans Visual Studio
 - `dotnet run` dans une console
