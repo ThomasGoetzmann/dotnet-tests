@@ -58,3 +58,4 @@ Exercice: lancer ce test de 4 manières différentes:
 - Test Explorer dans Visual Studio
 - `dotnet run` dans une console
 - `dotnet test` dans une console
+<!-- .element: class="list-fragment" -->
