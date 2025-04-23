@@ -3,6 +3,7 @@
 - Snapshot testing
 - Mutation testing
 - Outils d'analyse de converture de code (dotnet-coverage)
+  => Pour xUnit.v3 qui utilise la nouvelle Microsoft.Testing.Platform voir la [Documentation officielle xUnit.v3](https://xunit.net/docs/getting-started/v3/code-coverage-with-mtp)
 
 ##==##
 
