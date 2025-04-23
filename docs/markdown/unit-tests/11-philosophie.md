@@ -2,6 +2,8 @@
 
 # Mise en oeuvre des connaissaces acquises
 
+Code source à cloner: [github.com/ThomasGoetzmann/dotnet-tests-code](https://github.com/ThomasGoetzmann/dotnet-tests-code)
+
 ##==##
 
 <!-- .slide: class="transition-bg-sfeir-2" -->
