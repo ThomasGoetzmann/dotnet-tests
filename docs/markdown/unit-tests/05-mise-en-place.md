@@ -72,4 +72,4 @@ Exercice: lancer ce test de 4 manières différentes:
 
 <!-- .slide: class="transition-bg-sfeir-3" -->
 
-# Mise en pratique : TDD Tenis
+# Mise en pratique : TDD Tennis
