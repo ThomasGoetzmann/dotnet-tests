@@ -8,7 +8,13 @@
 
 # Mise en place - Configuration du .csproj
 
-La configuration d'un projet utilisant la nouvelle `Microsoft.Testing.Platform`
+1. Installer les templates des nouveaux projets xUnit.V3
+
+```bash
+dotnet new install xunit.v3.templates
+```
+
+2. Comprendre la configuration d'un projet utilisant la nouvelle `Microsoft.Testing.Platform`
 
 ```xml
 <!-- Dans le .csproj -->
