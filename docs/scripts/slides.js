@@ -5,7 +5,8 @@ function introSlides() {
 }
 
 function unitTests() {
-  return ['unit-tests/00-TITLE.md',
+  return [
+    'unit-tests/00-TITLE.md',
     'unit-tests/01-definitions.md',
     'unit-tests/02-autres-tests.md',
     'unit-tests/03-cycle-vie-logiciel.md',
@@ -18,13 +19,15 @@ function unitTests() {
     'unit-tests/10-cas-particuliers.md',
     'unit-tests/11-philosophie.md',
     'unit-tests/12-continuous-testing.md',
-    'unit-tests/13-other-tests.md'
+    'unit-tests/13-other-tests.md',
   ];
-
 }
 
+function logs() {
+  return ['logs/00-logs.md'];
+}
 function formation() {
-  return [...introSlides(), ...unitTests()].map((slidePath) => {
+  return [...introSlides(), ...unitTests(), ...logs()].map((slidePath) => {
     return { path: slidePath };
   });
 }
