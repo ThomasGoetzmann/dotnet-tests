@@ -24,7 +24,7 @@ function unitTests() {
 }
 
 function logs() {
-  return ['logs/00-logs.md'];
+  return ['s-logs/s-logs.md'];
 }
 function formation() {
   return [...introSlides(), ...unitTests(), ...logs()].map((slidePath) => {
